@@ -1,3 +1,5 @@
+import "./header.sass";
+
 function Header(props) {
     return ( 
         <header>
@@ -6,7 +8,7 @@ function Header(props) {
                 <button onClick={props.onBackButtonClick}>Back</button> :
                 null
             }
-            <h1>{props.title}</h1>
+            <h1>stock market</h1>
         </header>
      );
 }
