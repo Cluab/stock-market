@@ -1,8 +1,14 @@
 
-
 function CompaniesList() {
     const companies = []
-    return ( <div>
+    return ( 
+        <><div>
+                <img src="" alt="" />
+                <h2>{companies[0].title}</h2>
+                <span>{companies[0].value}</span>
+            </div>
+            <div> <p>US STOCK MARKET</p></div>
+            <div>
                 {
                     companies.map((company, index) => {
                         return (
@@ -13,8 +19,9 @@ function CompaniesList() {
                             </div>
                         )
                     }
-                    )}</div>
-);
+                    )}
+            </div>
+     </>);
 }
 
 export default CompaniesList;
