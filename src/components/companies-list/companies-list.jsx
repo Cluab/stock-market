@@ -1,7 +1,7 @@
-import { getValue } from "@testing-library/user-event/dist/utils";
 import { useEffect } from "react";
 import img from '../../assets/images/stock-market.jpg';
-
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import './companies.css'
 function CompaniesList() {
     const companiesLIST = [
         "ETH",
@@ -31,8 +31,9 @@ function CompaniesList() {
         //     dispatch(getValue(company))})
         // }, []};
     return ( 
-        <><div>
+        <><div className="H-company-container">
                 <img src={img} alt="stock-market" />
+                <span icon="fa-thin fa-money-bill-trend-up" />
                 <h2>{companies[0].symbol}</h2>
                 <span>{companies[0].revenue}</span>
             </div>
