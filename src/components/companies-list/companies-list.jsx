@@ -1,6 +1,24 @@
+import { getValue } from "@testing-library/user-event/dist/utils";
+import { useEffect } from "react";
 
 function CompaniesList() {
-    const companies = []
+    const companiesLIST = [
+        "ETH",
+        "GOGN",
+        "000540.SZ",
+        "603931.SS",
+        "JMG.L",
+        "067900.KS",
+        "ERM.L",
+        "BSP.AX",
+        "LVCLY",]
+
+ const companies = []
+        useEffect{() => {
+            if (companies.length === 10) return
+            companiesLIST.forEach(company => {
+            dispatch(getValue(company))})
+        }, []};
     return ( 
         <><div>
                 <img src="" alt="" />
