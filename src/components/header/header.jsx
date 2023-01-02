@@ -1,13 +1,16 @@
-import { PropType } from 'prop-types';
-import './header.css';
+import { PropTypes } from 'prop-types';
+import { Link } from 'react-router-dom';
+
+import './header.scss';
 
 function Header(props) {
-  const { showBackButton, onBackButtonClick } = props;
+  const { showBackButton } = props;
+  const back = '<';
   return (
-    <header>
+    <header className="header">
       {
                 showBackButton
-                  ? <button type="button" onClick={() => { onBackButtonClick(); }}>Back</button>
+                  ? <Link to="./">{back}</Link>
                   : null
             }
       <h1>stock market</h1>
@@ -16,8 +19,7 @@ function Header(props) {
 }
 
 Header.propTypes = {
-  showBackButton: PropType.bool.isRequired,
-  onBackButtonClick: PropType.func.isRequired,
+  showBackButton: PropTypes.bool.isRequired,
 };
 
 export default Header;
