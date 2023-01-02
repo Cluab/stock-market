@@ -1,4 +1,4 @@
-import { KEY } from '../config/financialModelingPrepAPIKey';
+import KEY from './apiKEY';
 
 const getCompaniesValueAsync = async (comp) => {
   const res = await fetch(
