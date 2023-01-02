@@ -1,4 +1,5 @@
-import valueReducer from './valueSlice';
+import { configureStore } from '@reduxjs/toolkit';
+import valueReducer from './companies/companies';
 
 const store = configureStore({
   reducer: {
