@@ -1,16 +1,23 @@
-import "./header.css";
+import { PropType } from 'prop-types';
+import './header.css';
 
 function Header(props) {
-    return ( 
-        <header>
-            {
-                props.showBackButton ?
-                <button onClick={props.onBackButtonClick}>Back</button> :
-                null
+  const { showBackButton, onBackButtonClick } = props;
+  return (
+    <header>
+      {
+                showBackButton
+                  ? <button type="button" onClick={() => { onBackButtonClick(); }}>Back</button>
+                  : null
             }
-            <h1>stock market</h1>
-        </header>
-     );
+      <h1>stock market</h1>
+    </header>
+  );
 }
+
+Header.propTypes = {
+  showBackButton: PropType.bool.isRequired,
+  onBackButtonClick: PropType.func.isRequired,
+};
 
 export default Header;
