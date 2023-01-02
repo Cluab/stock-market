@@ -1,0 +1,30 @@
+.main-comp-section {
+    background-color: rgb(249, 79, 144);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 3rem;
+    gap: 10%;
+
+    &>span {
+        font-size: 7rem;
+        color: rgb(176, 57, 103);
+    }
+
+    .main-comp-name {
+        max-width: min-content;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        color: white;
+        padding-top: 20px;
+        font-family: 'Gill Sans', sans-serif;
+
+        &>h2 {
+            font-weight: 600;
+            font-family: 'Gill Sans', sans-serif;
+        }
+
+        &>span {}
+    }
+}
