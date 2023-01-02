@@ -5,15 +5,15 @@ import './header.scss';
 
 function Header(props) {
   const { showBackButton } = props;
-  const back = '<';
   return (
     <header className="header">
+      <h1>stock market</h1>
       {
                 showBackButton
-                  ? <Link to="./">{back}</Link>
+                  ? <Link to="./"><span className="fa-solid fa-chevron-left" /></Link>
                   : null
             }
-      <h1>stock market</h1>
+
     </header>
   );
 }

@@ -14,10 +14,9 @@ function CompaniesPage() {
     eps: 2.395122340637848,
   },
   ];
-  const T = true;
   return (
     <>
-      <Header showBackButton={T} />
+      <Header showBackButton={false} />
       <div>
         <img src="" alt="" />
         <h2>{companies[0].symbol}</h2>
