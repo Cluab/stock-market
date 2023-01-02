@@ -22,9 +22,16 @@
 
         &>h2 {
             font-weight: 600;
-            font-family: 'Gill Sans', sans-serif;
         }
-
-        &>span {}
     }
+}
+
+.main-page-bar {
+    display: flex;
+    padding: 10px;
+    padding-left: 8px;
+    color: white;
+    background-color: rgb(236, 76, 138);
+    font-family: 'Gill Sans', sans-serif;
+    font-size: 14px;
 }

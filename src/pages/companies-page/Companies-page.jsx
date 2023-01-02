@@ -29,8 +29,7 @@ function CompaniesPage() {
           </span>
         </div>
       </div>
-      <div>
-        {' '}
+      <div className="main-page-bar">
         <p>US STOCK MARKET</p>
       </div>
       <CompaniesList />
