@@ -12,6 +12,7 @@ function CompaniesList() {
                     stocks.map((stock) => (
                       <Link key={stock[0].symbol} to={`/details/${stock[0].symbol}`}>
                         <div>
+                          <span className="fa-solid arrow-stock fa-circle-arrow-right" />
                           <i className="fa-solid fa-money-bill-trend-up" />
                           <h3>{stock[0].symbol}</h3>
                           <span>{stock[0].revenue}</span>

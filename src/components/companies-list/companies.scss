@@ -49,9 +49,19 @@ a {
   &>a>div {
     padding: 30px;
     display: flex;
+    padding-top: 0;
     flex-direction: column;
     color: white;
     font-family: 'Gill Sans', sans-serif;
+    height: 11rem;
+
+    &>.arrow-stock {
+      font-size: 15px;
+      color: rgb(255, 255, 255);
+      margin-bottom: 5px;
+      padding-left: 99%;
+      padding-top: 10px;
+    }
 
     &>i {
       font-size: 5rem;
