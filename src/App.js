@@ -6,29 +6,37 @@ import DetailsPage from './pages/details-page/details-page';
 import { getValue } from './Redux/companies/companies';
 
 const companiesLIST = [
+  'JPM',
   'ETH',
-  'TCRI',
+  'AAPL',
+  'MSFT',
   'AEF',
   'FULO',
-  'LVCLY',
-  'ACBA'];
+  'GOOG',
+  'AMZN'];
 function App() {
   const dispatch = useDispatch();
-  const compStore = useSelector((state) => state.companies);
+  const stocks = useSelector((state) => state.stocks);
 
   useEffect(() => {
-    if (compStore.length === 6) return;
-
-    dispatch(getValue(companiesLIST[compStore.length]));
-  }, [dispatch, compStore]);
+    if (stocks.length === 7) return;
+    dispatch(getValue(companiesLIST[stocks.length]));
+  }, [dispatch, stocks]);
 
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<CompaniesPage />} />
-        <Route path="/details/:symbol" element={<DetailsPage />} />
-      </Routes>
-    </BrowserRouter>
+    <div className="app">
+      <BrowserRouter>
+        <Routes>
+          <Route
+            path="/"
+            element={
+          stocks.length === 8 ? <CompaniesPage /> : <h1 className="loading">Loading...</h1>
+}
+          />
+          <Route path="/details/:symbol" element={<DetailsPage />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 

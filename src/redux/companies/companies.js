@@ -9,12 +9,11 @@ export const getValue = createAsyncThunk(GET_VALUE, async (stockes) => {
 });
 
 const valueSlice = createSlice({
-  name: 'stockes',
+  name: 'stocks',
   initialState: [],
   extraReducers: (builder) => {
     builder.addCase(getValue.fulfilled, (state, { payload }) => {
       const value = [payload[0]];
-      console.log(state);
       state.push(value.map((value) => ({
         symbol: value.symbol,
         date: value.date,
@@ -26,6 +25,7 @@ const valueSlice = createSlice({
         grossProfitRatio: value.grossProfitRatio,
         operatingExpenses: value.operatingExpenses,
         operatingIncome: value.operatingIncome,
+        eps: value.eps,
         operatingIncomeRatio: value.operatingIncomeRatio,
       })));
     });
