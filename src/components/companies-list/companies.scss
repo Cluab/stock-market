@@ -1,48 +1,52 @@
+a {
+  text-decoration: none;
+}
+
 .comp-name-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
-  &>div:nth-child(1) {
+  &>a:nth-child(1) {
     background-color: rgb(207, 68, 121)
   }
 
-  &>div:nth-child(4) {
+  &>a:nth-child(4) {
     background-color: rgb(207, 68, 121)
   }
 
-  &>div:nth-child(5) {
+  &>a:nth-child(5) {
     background-color: rgb(207, 68, 121)
   }
 
-  &>div:nth-child(8) {
+  &>a:nth-child(8) {
     background-color: rgb(207, 68, 121)
   }
 
-  &>div:nth-child(9) {
+  &>a:nth-child(9) {
     background-color: rgb(207, 68, 121)
   }
 
-  &>div:nth-child(2) {
+  &>a:nth-child(2) {
     background-color: rgb(219, 69, 128)
   }
 
-  &>div:nth-child(3) {
+  &>a:nth-child(3) {
     background-color: rgb(219, 69, 128)
   }
 
-  &>div:nth-child(6) {
+  &>a:nth-child(6) {
     background-color: rgb(219, 69, 128)
   }
 
-  &>div:nth-child(7) {
+  &>a:nth-child(7) {
     background-color: rgb(219, 69, 128)
   }
 
-  &>div:nth-child(10) {
+  &>a:nth-child(10) {
     background-color: rgb(219, 69, 128)
   }
 
-  &>div {
+  &>a>div {
     padding: 30px;
     display: flex;
     flex-direction: column;

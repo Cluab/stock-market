@@ -10,7 +10,7 @@ function Header(props) {
       <h1>stock market</h1>
       {
                 showBackButton
-                  ? <Link to="./"><span className="fa-solid fa-chevron-left" /></Link>
+                  ? <Link to="/"><span className="fa-solid fa-chevron-left" /></Link>
                   : null
             }
 

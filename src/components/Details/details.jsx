@@ -1,12 +1,23 @@
 // import { PropTypes } from 'prop-types';
 import { useParams } from 'react-router-dom';
+import './details.scss';
 
 function Details() {
   const { symbol } = useParams();
-  console.log(symbol);
   const companies = [{
     date: '2021-06-30',
     symbol: 'ETH',
+    reportedCurrency: 'USD',
+    period: 'FY',
+    revenue: 685169000,
+    costOfRevenue: 292062000,
+    grossProfit: 393107000,
+    grossProfitRatio: 0.5737372823347232,
+    eps: 2.395122340637848,
+  },
+  {
+    date: '2021-06-30',
+    symbol: 'gp',
     reportedCurrency: 'USD',
     period: 'FY',
     revenue: 685169000,
@@ -19,22 +30,29 @@ function Details() {
   const company = companies.find((c) => c.symbol === symbol);
 
   const {
-    name, revenue, date, period, costOfRevenue, grossProfit, grossProfitRatio, esp,
+    revenue, date, period, costOfRevenue, grossProfit, grossProfitRatio, eps,
   } = company;
   return (
     <>
-      <div>
-        <img src="" alt="" />
-        <h2>{name}</h2>
-        <p>{revenue}</p>
+      <div className="main-comp-section">
+        <span className="fa-solid fa-money-bill-trend-up" />
+        <div className="main-comp-name">
+          <h2>{symbol}</h2>
+          <span>
+            {revenue}
+            /
+            Revenue
+          </span>
+        </div>
       </div>
-      <div>
-        {name}
-        BREAKDOWN -
+      <div className="main-page-bar">
+        {symbol}
+
+        BREAKDOWN
         {date}
       </div>
       <div>
-        <ul>
+        <ul className="comp-details">
           <li>
             <p>period</p>
             {' '}
@@ -63,7 +81,7 @@ function Details() {
           <li>
             <p>Earnings per share</p>
             {' '}
-            <span>{esp}</span>
+            <span>{eps}</span>
           </li>
         </ul>
       </div>
