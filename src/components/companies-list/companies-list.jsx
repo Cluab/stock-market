@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import './companies.scss';
 
 function CompaniesList() {
-  const stocks = useSelector((state) => state.stocks);
+  let stocks = useSelector((state) => state.stocks);
+  stocks = stocks.slice(1);
   return (
 
     <div className="comp-name-list">
