@@ -1,5 +1,6 @@
 // import { useEffect } from 'react';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 import './companies.scss';
 
 function CompaniesList() {
@@ -64,19 +65,21 @@ function CompaniesList() {
   //     dispatch(getValue(company))})
   // }, []};
   return (
-    <>
-      <div className="comp-name-list">
-        {
+
+    <div className="comp-name-list">
+      {
                     companies.map((company) => (
-                      <div key={company.symbol}>
-                        <i className="fa-solid fa-money-bill-trend-up" />
-                        <h3>{company.symbol}</h3>
-                        <span>{company.revenue}</span>
-                      </div>
+                      <Link key={company.symbol} to={`/details/${company.symbol}`} className="pet">
+                        <div>
+                          <i className="fa-solid fa-money-bill-trend-up" />
+                          <h3>{company.symbol}</h3>
+                          <span>{company.revenue}</span>
+                        </div>
+                      </Link>
                     ))
 }
-      </div>
-    </>
+    </div>
+
   );
 }
 
