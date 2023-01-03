@@ -1,5 +1,6 @@
 import CompaniesList from '../../components/companies-list/companies-list';
 import Header from '../../components/header/header';
+import './Companies-page.scss';
 
 function CompaniesPage() {
   const companies = [{
@@ -16,18 +17,19 @@ function CompaniesPage() {
   ];
   return (
     <>
-      <Header props={{
-        showBackButton: false,
-        title: 'Companies',
-      }}
-      />
-      <div>
-        <img src="" alt="" />
-        <h2>{companies[0].symbol}</h2>
-        <span>{companies[0].revenue}</span>
+      <Header showBackButton={false} />
+      <div className="main-comp-section">
+        <span className="fa-solid fa-money-bill-trend-up" />
+        <div className="main-comp-name">
+          <h2>{companies[0].symbol}</h2>
+          <span>
+            {companies[0].revenue}
+            /
+            Revenue
+          </span>
+        </div>
       </div>
-      <div>
-        {' '}
+      <div className="main-page-bar">
         <p>US STOCK MARKET</p>
       </div>
       <CompaniesList />
