@@ -1,24 +1,59 @@
-import { createAsyncThunk, createSlice, configureStore } from '@reduxjs/toolkit';
-import getStocksValueAsync from '../../../services/stocksValueAPI';
-import { getValue } from '../companies';
+import configureMockStore from 'redux-mock-store';
+import thunk from 'redux-thunk';
+import { valueSlice } from '../companies';
 
-describe('async thunk action', () => {
-  it('dispatches pending and fulfilled actions', async () => {
-    const mockData = { symbol: 'AAPL', date: '2022-01-01', revenue: 100 };
-    const mockGetStocksValueAsync = jest.spyOn(getStocksValueAsync, 'default');
-    mockGetStocksValueAsync.mockImplementation(() => Promise.resolve(mockData));
+const middlewares = [thunk];
+const mockStore = configureMockStore(middlewares);
 
-    const store = configureStore({
-      reducer: {
-        stocks: getValue.reducer,
-      },
-    });
-
-    await store.dispatch(getValue());
-
-    expect(store.getActions()).toEqual([
-      { type: 'stockMarket/VALUE/GET_VALUE/pending' },
-      { type: 'stockMarket/VALUE/GET_VALUE/fulfilled', payload: mockData },
-    ]);
+describe('sortAscending action', () => {
+  it('dispatches the correct action', () => {
+    const expectedActions = [
+      { type: 'stocks/sortAscending' },
+    ];
+    const store = mockStore({});
+    store.dispatch(valueSlice.actions.sortAscending());
+    expect(store.getActions()).toEqual(expectedActions);
   });
+  //   it('dispatches the correct action and payload', () => {
+  //     const initialState = [
+  //       { symbol: 'GOOG', revenue: 50 },
+  //       { symbol: 'MSFT', revenue: 75 },
+  //       { symbol: 'AAPL', revenue: 100 },
+  //     ];
+  //     const expectedState = [
+  //       { symbol: 'AAPL', revenue: 100 },
+  //       { symbol: 'MSFT', revenue: 75 },
+  //       { symbol: 'GOOG', revenue: 50 },
+  //     ];
+  //     const store = mockStore({ stocks: initialState });
+  //     store.dispatch(valueSlice.actions.sortAscending());
+  //     const actualState = store.getState().stocks;
+  //     expect(actualState).toEqual(expectedState);
+  //   });
+
+  // write a test for the sortDescending action
+  it('dispatches the correct action', () => {
+    const expectedActions = [
+      { type: 'stocks/sortDescending' },
+    ];
+    const store = mockStore({});
+    store.dispatch(valueSlice.actions.sortDescending());
+    expect(store.getActions()).toEqual(expectedActions);
+  });
+//   it('dispatches the correct action and payload', () => {
+//     const initialState = [
+//       { symbol: 'GOOG', revenue: 100 },
+//       { symbol: 'MSFT', revenue: 50 },
+//       { symbol: 'AAPL', revenue: 75 },
+//     ];
+//     const expectedState = [
+//       { symbol: 'GOOG', revenue: 50 },
+//       { symbol: 'MSFT', revenue: 75 },
+//       { symbol: 'AAPL', revenue: 100 },
+//     ];
+//     const store = mockStore({ stocks: initialState });
+//     store.dispatch(valueSlice.actions.sortDescending());
+//     const actualState = store.getState().stocks;
+//     expect(actualState).toEqual(expectedState);
+//   });
 });

@@ -4,6 +4,14 @@ exports[`header component test cases should match with snapshot 1`] = `
 <header
   className="header"
 >
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    <i
+      className="fa-solid fa-gear"
+    />
+  </button>
   <h1>
     stock market
   </h1>
@@ -12,7 +20,7 @@ exports[`header component test cases should match with snapshot 1`] = `
     onClick={[Function]}
   >
     <span
-      className="fa-solid fa-chevron-left"
+      className="fa-solid fa-chevron-left test"
     />
   </a>
 </header>

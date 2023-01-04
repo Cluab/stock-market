@@ -51,7 +51,7 @@ describe('header component test cases', () => {
 
       </Provider>,
     );
-    const icon = document.querySelector('.fa-solid');
+    const icon = document.querySelector('.test');
 
     expect(icon).toBe(null);
   });

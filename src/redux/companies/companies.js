@@ -8,7 +8,7 @@ export const getValue = createAsyncThunk(GET_VALUE, async (stocks) => {
   return res;
 });
 
-const valueSlice = createSlice({
+export const valueSlice = createSlice({
   name: 'stocks',
   initialState: [],
   reducers: {
@@ -18,6 +18,7 @@ const valueSlice = createSlice({
     },
     sortDescending(state) {
       const newState = state.sort((a, b) => a[0].revenue - b[0].revenue);
+
       return newState;
     },
   },
