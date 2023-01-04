@@ -1,6 +1,7 @@
 .header {
-  position: fixed;
+  // position: fixed;
   width: 100%;
+  z-index: 1;
   background-color: rgb(219, 69, 127);
   color: rgb(255, 255, 255);
   padding: 10px;
@@ -27,5 +28,35 @@
   .fa-solid {
     font-size: 19px;
     color: rgb(255, 255, 255);
+  }
+}
+
+.gear-popup {
+  // position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(176, 57, 103);
+
+  &>ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &>li {
+      padding: 10px;
+      font-size: 15px;
+      font-weight: 600;
+      color: rgb(255, 255, 255);
+      font-family: 'Gill Sans', sans-serif;
+      cursor: pointer;
+
+      &:hover {
+        background-color: rgb(219, 69, 127);
+      }
+    }
   }
 }

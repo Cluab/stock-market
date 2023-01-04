@@ -13,11 +13,12 @@ const valueSlice = createSlice({
   initialState: [],
   reducers: {
     sortAscending(state) {
-      const newState = state.sort((a, b) => a.revenue - b.revenue);
+      const newState = state.sort((a, b) => a[0].revenue - b[0].revenue);
       return newState;
     },
     sortDescending(state) {
-      return state[0].revenue.sort((a, b) => b - a);
+      const newState = state.sort((a, b) => b[0].revenue - a[0].revenue);
+      return newState;
     },
   },
   extraReducers: (builder) => {
