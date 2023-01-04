@@ -7,6 +7,8 @@ function Header(props) {
   const { showBackButton } = props;
   return (
     <header className="header">
+      <i className="fa-solid fa-gear" />
+
       <h1>stock market</h1>
       {
                 showBackButton
@@ -15,6 +17,7 @@ function Header(props) {
             }
 
     </header>
+
   );
 }
 
