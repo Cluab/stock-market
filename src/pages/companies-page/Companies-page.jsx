@@ -26,7 +26,7 @@ function CompaniesPage() {
       <div className="main-page-bar">
         <p>US STOCK MARKET</p>
       </div>
-      <CompaniesList />
+      <CompaniesList props={stocks} />
     </>
   );
 }

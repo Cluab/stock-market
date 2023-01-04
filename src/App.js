@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import CompaniesPage from './pages/companies-page/Companies-page';
 import DetailsPage from './pages/details-page/details-page';
-import { getValue } from './Redux/companies/companies';
+import { getValue } from './redux/companies/companies';
 
 const companiesLIST = [
   'JPM',
