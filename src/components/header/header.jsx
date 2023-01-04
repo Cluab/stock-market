@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/control-has-associated-label */
+import React, { useState } from 'react';
 import { PropTypes } from 'prop-types';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
@@ -6,25 +8,27 @@ import './header.scss';
 
 function Header(props) {
   const dispatch = useDispatch();
-
+  const [showTab, setShowTab] = useState(false);
   const { showBackButton } = props;
   return (
     <>
       <header className="header">
-        <i className="fa-solid fa-gear" />
-
+        <button type="button" onClick={() => setShowTab(!showTab)}><i className="fa-solid fa-gear" /></button>
         <h1>stock market</h1>
+
         {showBackButton
           ? <Link to="/"><span className="fa-solid fa-chevron-left" /></Link>
           : null}
 
       </header>
-      <div className="gear-popup">
+      {showTab && (
+      <div className={`gear-popup ${showTab ? 'active' : ''}`}>
         <ul>
           <li>
             <button
               onClick={() => {
                 dispatch(sortAscending());
+                setShowTab(!showTab);
               }}
               type="button"
             >
@@ -35,6 +39,7 @@ function Header(props) {
             <button
               onClick={() => {
                 dispatch(sortDescending());
+                setShowTab(!showTab);
               }}
               type="button"
             >
@@ -43,7 +48,7 @@ function Header(props) {
           </li>
         </ul>
       </div>
-
+      )}
     </>
   );
 }
