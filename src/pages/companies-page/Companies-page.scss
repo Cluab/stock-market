@@ -8,32 +8,32 @@
     padding-top: 20%;
     max-height: 13rem;
 
-    &>span {
-        font-size: 7rem;
-        color: rgb(176, 57, 103);
-    }
+  & > span {
+    font-size: 7rem;
+    color: rgb(176, 57, 103);
+  }
 
-    .main-comp-name {
-        max-width: min-content;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        color: white;
-        padding-top: 20px;
-        font-family: 'Gill Sans', sans-serif;
+  .main-comp-name {
+    max-width: min-content;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: white;
+    padding-top: 20px;
+    font-family: 'Gill Sans', sans-serif;
 
-        &>h2 {
-            font-weight: 600;
-        }
+    & > h2 {
+      font-weight: 600;
     }
+  }
 }
 
 .main-page-bar {
-    display: flex;
-    padding: 6px;
-    padding-left: 8px;
-    color: white;
-    background-color: rgb(236, 76, 138);
-    font-family: 'Gill Sans', sans-serif;
-    font-size: 13px;
+  display: flex;
+  padding: 6px;
+  padding-left: 8px;
+  color: white;
+  background-color: rgb(236, 76, 138);
+  font-family: 'Gill Sans', sans-serif;
+  font-size: 13px;
 }
