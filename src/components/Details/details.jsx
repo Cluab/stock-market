@@ -1,10 +1,8 @@
-import { useSelector } from 'react-redux';
-import { useParams } from 'react-router-dom';
+import { PropTypes } from 'prop-types';
 import './details.scss';
 
-function Details() {
-  const { symbol } = useParams();
-  const stocks = useSelector((state) => state.stocks);
+function Details({ props, symbol }) {
+  const stocks = props;
   let stock;
   stocks.forEach((stocked) => {
     if (stocked[0].symbol === symbol) { stock = stocked; }
@@ -40,7 +38,7 @@ function Details() {
           <li>
             <p>revenue</p>
             {' '}
-            <span>{revenue}</span>
+            <span data-testid="test-revenue">{revenue}</span>
           </li>
           <li>
             <p>costOfRevenue</p>
@@ -81,7 +79,7 @@ function Details() {
           <li>
             <p>Earnings per share</p>
             {' '}
-            <span>{eps}</span>
+            <span data-testid="test-eps">{eps}</span>
           </li>
           <li>
             <p>OIR</p>
@@ -93,4 +91,9 @@ function Details() {
     </>
   );
 }
+
+Details.propTypes = {
+  props: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.object)).isRequired,
+  symbol: PropTypes.string.isRequired,
+};
 export default Details;
