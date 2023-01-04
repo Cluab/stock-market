@@ -6,47 +6,47 @@ a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
-  &>a:nth-child(1) {
-    background-color: rgb(207, 68, 121)
+  & > a:nth-child(1) {
+    background-color: rgb(207, 68, 121);
   }
 
-  &>a:nth-child(4) {
-    background-color: rgb(207, 68, 121)
+  & > a:nth-child(4) {
+    background-color: rgb(207, 68, 121);
   }
 
-  &>a:nth-child(5) {
-    background-color: rgb(207, 68, 121)
+  & > a:nth-child(5) {
+    background-color: rgb(207, 68, 121);
   }
 
-  &>a:nth-child(8) {
-    background-color: rgb(207, 68, 121)
+  & > a:nth-child(8) {
+    background-color: rgb(207, 68, 121);
   }
 
-  &>a:nth-child(9) {
-    background-color: rgb(207, 68, 121)
+  & > a:nth-child(9) {
+    background-color: rgb(207, 68, 121);
   }
 
-  &>a:nth-child(2) {
-    background-color: rgb(219, 69, 128)
+  & > a:nth-child(2) {
+    background-color: rgb(219, 69, 128);
   }
 
-  &>a:nth-child(3) {
-    background-color: rgb(219, 69, 128)
+  & > a:nth-child(3) {
+    background-color: rgb(219, 69, 128);
   }
 
-  &>a:nth-child(6) {
-    background-color: rgb(219, 69, 128)
+  & > a:nth-child(6) {
+    background-color: rgb(219, 69, 128);
   }
 
-  &>a:nth-child(7) {
-    background-color: rgb(219, 69, 128)
+  & > a:nth-child(7) {
+    background-color: rgb(219, 69, 128);
   }
 
-  &>a:nth-child(10) {
-    background-color: rgb(219, 69, 128)
+  & > a:nth-child(10) {
+    background-color: rgb(219, 69, 128);
   }
 
-  &>a>div {
+  & > a > div {
     padding: 30px;
     display: flex;
     padding-top: 0;
@@ -55,7 +55,7 @@ a {
     font-family: 'Gill Sans', sans-serif;
     height: 11rem;
 
-    &>.arrow-stock {
+    & > .arrow-stock {
       font-size: 15px;
       color: rgb(255, 255, 255);
       margin-bottom: 5px;
@@ -63,12 +63,12 @@ a {
       padding-top: 10px;
     }
 
-    &>i {
+    & > i {
       font-size: 5rem;
       color: rgb(176, 57, 103);
     }
 
-    &>h3 {
+    & > h3 {
       font-size: 1.3rem;
       font-weight: 600;
       margin-top: 10px;
