@@ -31,6 +31,7 @@ function Details() {
         {symbol}
         &nbsp;
         BREAKDOWN
+        &nbsp;-
         &nbsp;
         {date}
       </div>
