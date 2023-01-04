@@ -1,31 +1,63 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`companies component test cases should match with snapshot 1`] = `
-<div
-  className="comp-name-list"
->
+Array [
   <a
     href="/details/JPM"
     onClick={[Function]}
   >
-    <div>
+    <div
+      className="main-comp-section"
+    >
       <span
-        className="fa-solid arrow-stock fa-circle-arrow-right"
-      />
-      <i
         className="fa-solid fa-money-bill-trend-up"
       />
-      <h3
-        data-testid="test-symbol"
+      <div
+        className="main-comp-name"
       >
-        JPM
-      </h3>
-      <span
-        data-testid="test-revenue"
-      >
-        121685000000
-      </span>
+        <h2>
+          JPM
+        </h2>
+        <span>
+          121685000000
+          / Revenue
+        </span>
+      </div>
     </div>
-  </a>
-</div>
+  </a>,
+  <div
+    className="main-page-bar"
+  >
+    <p>
+      US STOCK MARKET
+    </p>
+  </div>,
+  <div
+    className="comp-name-list"
+  >
+    <a
+      href="/details/JPM"
+      onClick={[Function]}
+    >
+      <div>
+        <span
+          className="fa-solid arrow-stock fa-circle-arrow-right"
+        />
+        <i
+          className="fa-solid fa-money-bill-trend-up"
+        />
+        <h3
+          data-testid="test-symbol"
+        >
+          JPM
+        </h3>
+        <span
+          data-testid="test-revenue"
+        >
+          121685000000
+        </span>
+      </div>
+    </a>
+  </div>,
+]
 `;

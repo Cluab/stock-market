@@ -54,12 +54,13 @@ a {
     color: white;
     font-family: 'Gill Sans', sans-serif;
     height: 11rem;
+    padding-right: 20px;
 
     &>.arrow-stock {
       font-size: 15px;
       color: rgb(255, 255, 255);
       margin-bottom: 5px;
-      padding-left: 99%;
+      padding-left: 100%;
       padding-top: 10px;
     }
 
