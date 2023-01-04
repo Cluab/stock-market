@@ -1,18 +1,21 @@
 .header {
-  background-color: rgb(236, 76, 138);
+  position: fixed;
+  width: 100%;
+  background-color: rgb(236, 76, 139);
   color: rgb(255, 255, 255);
   padding: 10px;
   display: flex;
-  padding-right: 38%;
+  padding-right: 37%;
   justify-content: space-between;
   flex-direction: row-reverse;
   text-align: center;
   font-size: 10px;
   font-family: 'Gill Sans', sans-serif;
+  height: 7%;
 
   & > h1 {
     font-weight: 400;
-    font-size: 17px;
+    font-size: 20px;
   }
 
   .fa-solid {

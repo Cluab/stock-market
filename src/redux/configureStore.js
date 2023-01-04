@@ -3,7 +3,7 @@ import valueReducer from './companies/companies';
 
 const store = configureStore({
   reducer: {
-    companies: valueReducer,
+    stocks: valueReducer,
   },
 });
 
