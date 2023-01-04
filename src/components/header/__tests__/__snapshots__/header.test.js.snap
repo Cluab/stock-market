@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`header component test cases should match with snapshot 1`] = `
+<header
+  className="header"
+>
+  <h1>
+    stock market
+  </h1>
+  <a
+    href="/"
+    onClick={[Function]}
+  >
+    <span
+      className="fa-solid fa-chevron-left"
+    />
+  </a>
+</header>
+`;
