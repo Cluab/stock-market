@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import { MemoryRouter as Router } from 'react-router-dom';
 import { configureStore } from '@reduxjs/toolkit';
 import '@testing-library/jest-dom/extend-expect';
-import Details from '../Details';
+import Details from '../details';
 import valueReducer from '../../../redux/companies/companies';
 
 const store = configureStore({ reducer: { stock: valueReducer } });
