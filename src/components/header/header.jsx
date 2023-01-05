@@ -13,7 +13,7 @@ function Header(props) {
   return (
     <>
       <header data-testid="header" className="header">
-        <button type="button" onClick={() => { if (showBackButton) return; setShowTab(!showTab); }}><i className="fa-solid fa-gear" /></button>
+        <button type="button" onClick={() => { if (showBackButton) (window.open('https://github.com/Cluab/stock-market/issues', '_blank')); else (setShowTab(!showTab)); }}><i className="fa-solid fa-gear" /></button>
         <h1>stock market</h1>
 
         {showBackButton

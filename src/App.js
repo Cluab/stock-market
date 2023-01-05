@@ -13,13 +13,16 @@ const companiesLIST = [
   'AEF',
   'FULO',
   'GOOG',
-  'AMZN'];
+  'AMZN',
+  'TSLA',
+  'NVDA',
+  'MA'];
 function App() {
   const dispatch = useDispatch();
   const stocks = useSelector((state) => state.stocks);
 
   useEffect(() => {
-    if (stocks.length === 8) return;
+    if (stocks.length === 11) return;
     dispatch(getValue(companiesLIST[stocks.length]));
   }, [dispatch, stocks.length]);
 
@@ -30,7 +33,7 @@ function App() {
           <Route
             path="/"
             element={
-          stocks.length === 8 ? <CompaniesPage /> : <h1 className="loading">Loading...</h1>
+          stocks.length === 11 ? <CompaniesPage /> : <h1 className="loading">Loading...</h1>
 }
           />
           <Route path="/details/:symbol" element={<DetailsPage />} />
