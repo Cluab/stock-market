@@ -33,7 +33,7 @@ function App() {
           <Route
             path="/"
             element={
-          stocks.length === 11 ? <CompaniesPage /> : <h1 className="loading">Loading...</h1>
+          stocks.length === 1 ? <CompaniesPage /> : <h1 className="loading">Loading...</h1>
 }
           />
           <Route path="/details/:symbol" element={<DetailsPage />} />
