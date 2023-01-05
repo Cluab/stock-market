@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`companies component test cases should match with snapshot 1`] = `
+Array [
+  <div
+    className="main-comp-section"
+    data-testid="Details"
+  >
+    <span
+      className="fa-solid fa-money-bill-trend-up"
+    />
+    <div
+      className="main-comp-name"
+    >
+      <h2>
+        JPM
+      </h2>
+      <span>
+        121685000000
+        / Revenue
+      </span>
+    </div>
+  </div>,
+  <div
+    className="main-page-bar"
+  >
+    JPM
+      BREAKDOWN  -  
+    2021-12-31
+  </div>,
+  <div>
+    <ul
+      className="comp-details"
+    >
+      <li>
+        <p>
+          revenue
+        </p>
+         
+        <span
+          data-testid="test-revenue"
+        >
+          121685000000
+        </span>
+      </li>
+      <li>
+        <p>
+          costOfRevenue
+        </p>
+         
+        <span>
+          0
+        </span>
+      </li>
+      <li>
+        <p>
+          costAndExpenses
+        </p>
+         
+        <span>
+          0
+        </span>
+      </li>
+      <li>
+        <p>
+          ebitda
+        </p>
+         
+        <span>
+          73047000000
+        </span>
+      </li>
+      <li>
+        <p>
+          grossProfit
+        </p>
+         
+        <span>
+          0
+        </span>
+      </li>
+      <li>
+        <p>
+          grossProfitRatio
+        </p>
+         
+        <span>
+          0
+        </span>
+      </li>
+      <li>
+        <p>
+          operatingExpenses
+        </p>
+         
+        <span>
+          0
+        </span>
+      </li>
+      <li>
+        <p>
+          operatingIncome
+        </p>
+         
+        <span>
+          0
+        </span>
+      </li>
+      <li>
+        <p>
+          Earnings per share
+        </p>
+         
+        <span
+          data-testid="test-eps"
+        >
+          15.39
+        </span>
+      </li>
+      <li>
+        <p>
+          OIR
+        </p>
+         
+        <span>
+          0
+        </span>
+      </li>
+    </ul>
+  </div>,
+]
+`;

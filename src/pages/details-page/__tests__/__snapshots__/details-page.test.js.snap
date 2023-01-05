@@ -1,0 +1,156 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CompaniesPage component should match with snapshot 1`] = `
+Array [
+  <header
+    className="header"
+    data-testid="header"
+  >
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      <i
+        className="fa-solid fa-gear"
+      />
+    </button>
+    <h1>
+      stock market
+    </h1>
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      <span
+        className="fa-solid fa-chevron-left test"
+      />
+    </a>
+  </header>,
+  <div
+    className="main-comp-section"
+    data-testid="Details"
+  >
+    <span
+      className="fa-solid fa-money-bill-trend-up"
+    />
+    <div
+      className="main-comp-name"
+    >
+      <h2>
+        AAPL
+      </h2>
+      <span>
+        394328000000
+        / Revenue
+      </span>
+    </div>
+  </div>,
+  <div
+    className="main-page-bar"
+  >
+    AAPL
+      BREAKDOWN  -  
+    2022-09-24
+  </div>,
+  <div>
+    <ul
+      className="comp-details"
+    >
+      <li>
+        <p>
+          revenue
+        </p>
+         
+        <span
+          data-testid="test-revenue"
+        >
+          394328000000
+        </span>
+      </li>
+      <li>
+        <p>
+          costOfRevenue
+        </p>
+         
+        <span>
+          223546000000
+        </span>
+      </li>
+      <li>
+        <p>
+          costAndExpenses
+        </p>
+         
+        <span>
+          274891000000
+        </span>
+      </li>
+      <li>
+        <p>
+          ebitda
+        </p>
+         
+        <span>
+          133138000000
+        </span>
+      </li>
+      <li>
+        <p>
+          grossProfit
+        </p>
+         
+        <span>
+          170782000000
+        </span>
+      </li>
+      <li>
+        <p>
+          grossProfitRatio
+        </p>
+         
+        <span>
+          0.43309630561360085
+        </span>
+      </li>
+      <li>
+        <p>
+          operatingExpenses
+        </p>
+         
+        <span>
+          51345000000
+        </span>
+      </li>
+      <li>
+        <p>
+          operatingIncome
+        </p>
+         
+        <span>
+          119437000000
+        </span>
+      </li>
+      <li>
+        <p>
+          Earnings per share
+        </p>
+         
+        <span
+          data-testid="test-eps"
+        >
+          6.15
+        </span>
+      </li>
+      <li>
+        <p>
+          OIR
+        </p>
+         
+        <span>
+          0.30288744395528594
+        </span>
+      </li>
+    </ul>
+  </div>,
+]
+`;
