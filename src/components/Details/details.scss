@@ -3,13 +3,13 @@
   flex-direction: column;
 
   & > li {
-    font-weight: 600;
+    font-weight: 400;
     padding: 20px;
     display: flex;
     flex-direction: row;
     color: white;
     justify-content: space-between;
-    font-family: 'Gill Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
 
     & > i {
       font-size: 5rem;

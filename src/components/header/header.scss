@@ -1,25 +1,100 @@
 .header {
   position: fixed;
   width: 100%;
-  background-color: rgb(236, 76, 139);
+  z-index: 1;
+  background-color: rgb(219, 69, 127);
   color: rgb(255, 255, 255);
   padding: 10px;
   display: flex;
-  padding-right: 37%;
-  justify-content: space-between;
+  gap: 95px;
   flex-direction: row-reverse;
   text-align: center;
   font-size: 10px;
-  font-family: 'Gill Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   height: 7%;
+
+  & > button {
+    background-color: rgb(219, 69, 127);
+    border: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+  }
 
   & > h1 {
     font-weight: 400;
     font-size: 20px;
+    padding-top: 2px;
+  }
+
+  i {
+    padding-top: 5px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
   }
 
   .fa-solid {
+    padding-top: 3px;
     font-size: 19px;
     color: rgb(255, 255, 255);
+  }
+}
+
+.gear-popup {
+  position: fixed;
+  display: flex;
+  margin-top: 3rem;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(176, 57, 103);
+  transition: 1s;
+  opacity: 0.9;
+
+  & > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+
+    & > li {
+      padding: 10px;
+      font-size: 15px;
+      font-weight: 600;
+      color: rgb(255, 255, 255);
+      font-family: 'Gill Sans', sans-serif;
+      cursor: pointer;
+
+      & > button {
+        background-color: rgb(176, 57, 103);
+        border: none;
+        color: rgb(255, 255, 255);
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        font-weight: 600;
+        font-family: 'Gill Sans', sans-serif;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: rgb(219, 69, 127);
+        }
+      }
+
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: rgb(219, 69, 127);
+      }
+    }
   }
 }
