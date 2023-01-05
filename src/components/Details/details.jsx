@@ -7,14 +7,13 @@ function Details({ props, symbol }) {
   stocks.forEach((stocked) => {
     if (stocked[0].symbol === symbol) { stock = stocked; }
   });
-
   const {
     revenue, ebitda, operatingIncome, operatingIncomeRatio,
     operatingExpenses, date, costAndExpenses, costOfRevenue, grossProfit, grossProfitRatio, eps,
   } = stock[0];
   return (
     <>
-      <div className="main-comp-section">
+      <div data-testid="Details" className="main-comp-section">
         <span className="fa-solid fa-money-bill-trend-up" />
         <div className="main-comp-name">
           <h2>{symbol}</h2>

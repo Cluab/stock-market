@@ -12,7 +12,7 @@ function Header(props) {
   const { showBackButton } = props;
   return (
     <>
-      <header className="header">
+      <header data-testid="header" className="header">
         <button type="button" onClick={() => setShowTab(!showTab)}><i className="fa-solid fa-gear" /></button>
         <h1>stock market</h1>
 

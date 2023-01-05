@@ -1,7 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`companies component test cases should match with snapshot 1`] = `
+exports[`CompaniesPage component should match with snapshot 1`] = `
 Array [
+  <header
+    className="header"
+    data-testid="header"
+  >
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      <i
+        className="fa-solid fa-gear"
+      />
+    </button>
+    <h1>
+      stock market
+    </h1>
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      <span
+        className="fa-solid fa-chevron-left test"
+      />
+    </a>
+  </header>,
   <div
     className="main-comp-section"
     data-testid="Details"
@@ -13,10 +37,10 @@ Array [
       className="main-comp-name"
     >
       <h2>
-        JPM
+        AAPL
       </h2>
       <span>
-        121685000000
+        394328000000
         / Revenue
       </span>
     </div>
@@ -24,9 +48,9 @@ Array [
   <div
     className="main-page-bar"
   >
-    JPM
+    AAPL
       BREAKDOWN  -  
-    2021-12-31
+    2022-09-24
   </div>,
   <div>
     <ul
@@ -40,7 +64,7 @@ Array [
         <span
           data-testid="test-revenue"
         >
-          121685000000
+          394328000000
         </span>
       </li>
       <li>
@@ -49,7 +73,7 @@ Array [
         </p>
          
         <span>
-          0
+          223546000000
         </span>
       </li>
       <li>
@@ -58,7 +82,7 @@ Array [
         </p>
          
         <span>
-          0
+          274891000000
         </span>
       </li>
       <li>
@@ -67,7 +91,7 @@ Array [
         </p>
          
         <span>
-          73047000000
+          133138000000
         </span>
       </li>
       <li>
@@ -76,7 +100,7 @@ Array [
         </p>
          
         <span>
-          0
+          170782000000
         </span>
       </li>
       <li>
@@ -85,7 +109,7 @@ Array [
         </p>
          
         <span>
-          0
+          0.43309630561360085
         </span>
       </li>
       <li>
@@ -94,7 +118,7 @@ Array [
         </p>
          
         <span>
-          0
+          51345000000
         </span>
       </li>
       <li>
@@ -103,7 +127,7 @@ Array [
         </p>
          
         <span>
-          0
+          119437000000
         </span>
       </li>
       <li>
@@ -114,7 +138,7 @@ Array [
         <span
           data-testid="test-eps"
         >
-          15.39
+          6.15
         </span>
       </li>
       <li>
@@ -123,7 +147,7 @@ Array [
         </p>
          
         <span>
-          0
+          0.30288744395528594
         </span>
       </li>
     </ul>

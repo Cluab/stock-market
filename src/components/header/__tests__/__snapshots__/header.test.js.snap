@@ -3,6 +3,7 @@
 exports[`header component test cases should match with snapshot 1`] = `
 <header
   className="header"
+  data-testid="header"
 >
   <button
     onClick={[Function]}

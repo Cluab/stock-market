@@ -9,7 +9,7 @@ function CompaniesList({ props }) {
   return (
     <>
       <Link to={`/details/${mainStock[0][0].symbol}`}>
-        <div className="main-comp-section">
+        <div data-testid="companies-list" className="main-comp-section">
           <span className="fa-solid fa-money-bill-trend-up" />
           <div className="main-comp-name">
             <h2>{mainStock[0][0].symbol}</h2>
