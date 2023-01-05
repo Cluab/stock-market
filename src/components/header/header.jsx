@@ -13,7 +13,7 @@ function Header(props) {
   return (
     <>
       <header data-testid="header" className="header">
-        <button type="button" onClick={() => setShowTab(!showTab)}><i className="fa-solid fa-gear" /></button>
+        <button type="button" onClick={() => { if (showBackButton) return; setShowTab(!showTab); }}><i className="fa-solid fa-gear" /></button>
         <h1>stock market</h1>
 
         {showBackButton
@@ -32,7 +32,7 @@ function Header(props) {
               }}
               type="button"
             >
-              Ascending
+              High revenue
             </button>
           </li>
           <li>
@@ -43,7 +43,7 @@ function Header(props) {
               }}
               type="button"
             >
-              Descending
+              Low revenue
             </button>
           </li>
         </ul>
