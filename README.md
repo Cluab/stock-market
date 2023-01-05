@@ -6,7 +6,7 @@
 
 # 📖 Space Travels' Hub <a name="about-project"></a>
 
-**Space Travels' Hub** is basic project that provides commercial and scientific space travel services, offering a range of rockets for booking and the opportunity to join selected space missions. It also allows users to view mission details and requirements, and track the progress of their bookings in the profile section.
+**Stock Market Explorer** This is a simple and intuitive online application that allows you to check the latest stock market trends and view detailed information about your favorite stocks. With Stock Market Explorer, you can easily filter stocks by revenue, see the latest prices and trends, and stay up-to-date with the latest financial news..
 
 <hr>
 <br>
@@ -27,9 +27,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Display a list of of all available SpaceX rockets**
-- **Display a list of current missions along with their brief description**
-- **Display a list of all reserved rockets and space missions**
+- **Display a list of several stocks to explore in**
+- **Allows you to filter the stocks depending on their revenue**
+- **Display of all stock in details where you can keep an eye to**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -76,8 +76,8 @@ In order to run this project you need to install these prerequisites:
 Clone this repository to your desired folder:
 
 ```sh
-  git clone git@github.com:Cluab/space-travelers-hub.git
-  cd space-travelers-hub
+  git clone git@github.com:Cluab/stock-market.git
+  cd stock-market
 ```
 
 ### Install
@@ -135,9 +135,6 @@ npm install gh-pages --save-dev
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Mohamed Talbi**
-
-- GitHub: [Mohamed Talbi](https://github.com/Kweeka1)
 
 👤 **Ibrahim Suhail Alyousefi**
 
@@ -150,8 +147,8 @@ npm install gh-pages --save-dev
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **Improve user interface**
-- [ ] **Add buttons to reserved rockets and missions that direct the user to their corresponding page**
-- [ ] **Add ability to cancel reservation and membership in profile page**
+- [ ] **Add images to different stocks**
+- [ ] **Add desktop version of the application**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -161,7 +158,7 @@ npm install gh-pages --save-dev
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Cluab/space-travelers-hub/issues).
+Feel free to check the [issues page](https://github.com/Cluab/stock-market/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -195,6 +192,6 @@ I would like to thank Microverse for project inspiration.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./MIT.md) licensed.
+This project is [MIT](./License.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
