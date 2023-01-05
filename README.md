@@ -4,7 +4,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Space Travels' Hub <a name="about-project"></a>
+# 📖 Stock Market Explorer <a name="about-project"></a>
 
 **Stock Market Explorer** This is a simple and intuitive online application that allows you to check the latest stock market trends and view detailed information about your favorite stocks. With Stock Market Explorer, you can easily filter stocks by revenue, see the latest prices and trends, and stay up-to-date with the latest financial news..
 
@@ -12,7 +12,7 @@
 <br>
 
 ![alt text](/app_screenshot.png "app screenshot")
-
+![alt text](/app_screenshot2.png "app screenshot")
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -37,7 +37,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Open live demo]()
+- [Open live demo](https://stock-market-explorer.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
