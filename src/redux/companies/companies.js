@@ -3,6 +3,16 @@ import getStocksValueAsync from '../../services/stocksValueAPI';
 
 const GET_VALUE = 'stockMarket/VALUE/GET_VALUE';
 
+export const sortAscendingAction = (state) => {
+  const newState = state.sort((a, b) => b[0].revenue - a[0].revenue);
+  return newState;
+};
+
+export const sortDescendingAction = (state) => {
+  const newState = state.sort((a, b) => a[0].revenue - b[0].revenue);
+  return newState;
+};
+
 export const getValue = createAsyncThunk(GET_VALUE, async (stocks) => {
   const res = await getStocksValueAsync(stocks);
   return res;
@@ -13,13 +23,10 @@ export const valueSlice = createSlice({
   initialState: [],
   reducers: {
     sortAscending(state) {
-      const newState = state.sort((a, b) => b[0].revenue - a[0].revenue);
-      return newState;
+      return sortAscendingAction(state);
     },
     sortDescending(state) {
-      const newState = state.sort((a, b) => a[0].revenue - b[0].revenue);
-
-      return newState;
+      return sortDescendingAction(state);
     },
   },
   extraReducers: (builder) => {
