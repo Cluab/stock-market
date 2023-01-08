@@ -1,3 +1,9 @@
+@media screen and (min-width: 390px) {
+  .header {
+    gap: 35%;
+  }
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -6,7 +12,7 @@
   color: rgb(255, 255, 255);
   padding: 10px;
   display: flex;
-  gap: 95px;
+  gap: 27%;
   flex-direction: row-reverse;
   text-align: center;
   font-size: 10px;
